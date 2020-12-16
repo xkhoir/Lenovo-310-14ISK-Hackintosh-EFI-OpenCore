@@ -55,16 +55,16 @@ kext
 
 Important Kext : 
 - Lilu.kext
+- WhateverGreen.kext (to disable nvidia dGPU and patch framebuffer IHD 520)
 - VirtualSMC.kext
 - SMCProcessor.kext
 - SMCSuperIO.kext
 - SMCBatteryManager.kext (to patch battery)
-- WhateverGreen.kext (to disable nvidia dGPU and patch framebuffer IHD 520)
+- ApplePS2SmartTouchPad.kext (Synaptic Touchpad)
 
-Additional kext for this spec: 
+ for this spec: 
 - AirportItlwm.kext (Intel AC 3165)
 - AppleALC.kext (to patch audio)
-- ApplePS2SmartTouchPad.kext (Synaptic Touchpad)
 - IntelBluetoothInjector.kext (IntelBluetooth)
 - RealtekRTL8111.kext (Realtek Ethernet)
 
@@ -76,18 +76,21 @@ Before installation process :
 
 I assume you can make your own usb installer with OpenCore Bootloader and do the MacOs installation process
 
-Prepare the Installation Media using the Kexts and Opencore files that I provide.
+1. remove the Additional kext 
+
+2. Prepare the Installation Media using the Kexts and Opencore files that I provide.
 Use fake ig-platform-id 12345678 just to get to the installer view
 
 DeviceProperties->PciRoot(0x0)/Pci(0x2,0x0)->AAPL,ig-platform-id 
 
 change value from 00001619 to 12345678, and delete device-id and then save
 
+
 ============================================================================
 
 Post Installation :
 
-1.Open terminal type "sudo diskutil mount EFI" and type the password
+1. Open terminal type "sudo diskutil mount EFI" and type the password
 Copy EFI folder from FlashDrive to the internal EFI partition
 
 2. do the reverse when installing earlier change value AAPL,ig-platform-id from 12345678 to 00001619, 
