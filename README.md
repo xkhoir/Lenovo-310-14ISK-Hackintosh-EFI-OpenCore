@@ -10,114 +10,101 @@ Sorry for my bad english :)
 
 ============================================================================
 
-Bootloader : OpenCore version 0.6.4
+### Bootloader : OpenCore version 0.6.5
 
-in this case i installed MacOs : BigSur v11.1 (20C69) from gibmacos 
+### Installed MacOs : BigSur v11.1 (20C69) from gibmacos
 
-My Specifications :
-- Processor : Intel Core i5 6200U Skylake
-- RAM : 4GB DDR4 Onboard + 4GB DDR4 SODIMM slot (2133 Mhz)
-- IGPU : Intel HD Graphics 520
-- dGPU : Nvidia GT 920MX
-- Storage : 1x WD Blue 1TB + 1x Visipro SSD SATA 120GB
-- Wifi : Intel AC 3165 + Bluetooth
-- Audio : Conexant CX20751/2
-- Ethernet : Realtek RTL8168GU Gigabit Ethernet
-- Touchpad : Synaptic SYN2B58 PS2 Interface
+### My Specifications :
 
-============================================================================
+| Type | Spec | Status |
+| ----------- | ----------- | ----------- |
+| Processor | Intel Core i5 6200U Skylake | Working |
+| RAM | 4GB DDR4 Onboard + Samsung 4GB DDR4 SODIMM slot (2133 Mhz) | Working |
+| IGPU | Intel HD Graphics 520 | Working |
+| dGPU | Nvidia GT 920MX | Not Supported Optimus Mode |
+| Storage | 1x WD Blue 1TB + 1x Visipro SSD SATA 120GB | Working |
+| Wifi | Intel AC 3165 + Bluetooth | Working |
+| Ethernet | Realtek RTL8168GU Gigabit Ethernet | Working |
+| Touchpad | Synaptic SYN2B58 PS2 Interface | Working |
 
-Already work :
-- QE/CI Graphics IHD 520 1536 MB
-- CPU PM
-- Restart and Shutdown
-- Brightness
-- Battery
-- Ethernet
-- Bluetooth
-- WIFI  
-- Internal Speaker, Internal Mic, Headphone and External Mic
-- Touchpad and gesture
-- USB 3.0 and 2.0
+### System Status :
 
-Not Work :
-- Nvidia GT920MX (Nvidia Optimus is not supported)
-- Sleep
+| Type | Status |
+| ----------- | ----------- |
+| QE/CI Graphics Intel HD 520 | Working |
+| CPU PM | Working |
+| Restart and Shutdown | Working |
+| Sleep | Not Working |
+| Brightness Slider & keys F11 - F12 | Working |
+| Battery Precentage | Working |
+| Touchpad and gesture | Working |
+| SD Card Reader | Untested |
+| HDMI Display | Working |
+| HDMI  Audio | Not Working |
+| iService | Not Working |
 
-Untested :
-- SD Card Reader
-- HDMI Display and Audio
-- iService
+### Used Kext :
 
-============================================================================
+| Kext | Info |
+| ----------- | ----------- |
+| [Lilu.kext](https://github.com/acidanthera/Lilu/releases) | Kernel extension Arbitrary kext and process patching on macOS |
+| [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) | To disable Nvidia discrete GPU and patch framebuffer Intel HD 520 |
+| [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases) | To patch on-board sound controllers|
+| [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases) | SMC Emulator Layer |
+| [SMCProcessor.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Processor Monitoring |
+| [SMCSuperIO.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Fan Speed Monitoring |
+| [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Battery Monitoring |
+| [VoodooPS2Controller.kext](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller/releases) | To Patch Synaptics ps/2 Touchpad & Keyboard |
+| [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) | To patch Intel AC 3165 |
+| [IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | To patch Intel Bluetooth |
+| [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | Intel Skylake CPU select its own stepping speed without the usage of the CPU Multiplier |
+| [VoodooTSCSync.kext](https://bitbucket.org/RehabMan/VoodooTSCSync/downloads) | A kernel extension which will synchronize the TSC on any Intel CPUs |
+| [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases) | To patch The Ethernet |
 
-kext
+After you download it, copy and paste/replace all the kext to the EFI folder in EFI-> OC-> Kext)
 
-Important Kext : 
-- Lilu.kext
-- WhateverGreen.kext (to disable nvidia dGPU and patch framebuffer IHD 520)
-- VirtualSMC.kext
-- SMCProcessor.kext
-- SMCSuperIO.kext
-- SMCBatteryManager.kext (to patch battery)
-- ApplePS2SmartTouchPad.kext (Synaptic Touchpad)
+### Used SSDT :
 
- for this spec: 
-- AirportItlwm.kext (Intel AC 3165)
-- AppleALC.kext (to patch audio)
-- IntelBluetoothInjector.kext (IntelBluetooth)
-- RealtekRTL8111.kext (Realtek Ethernet)
+| DSDT/SSDT | Info | Link | Guide |
+| ----------- | ----------- | ----------- | ----------- |
+| DSDT.aml | get the installer | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-EC.aml | Fix Embedded Controller for hotkeys and battery | [Download](https://github.com/corpnewt/gibMacOS) | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html) |
+| SSDT-HPET.aml | get the installer | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-PLUG.aml | Fix Intel Skylake Processor Plugin Type | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-PNLF.aml | Fix Backlight Slider | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-SBUS-MCHC.aml | Fix Intel System Management Bus | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-dGPU-Off.aml | Disable Nvidia Discrete GPU | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-UIAC.aml | Blocked Unused Usb Port | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| SSDT-USBX.aml | Fix Usb Port Mapping | [Download](https://github.com/corpnewt/gibMacOS) | - |
 
-All the kext above is included here : https://tinyurl.com/ybz3tzgp (copy and replace to the EFI folder after you download it in EFI-> OC-> Kext)
+After you download it, copy and paste/replace all the DSDT/SSDT to the EFI folder in EFI-> OC-> ACPI)
 
-============================================================================
+### Installer MacOs, and Supporting App :
 
-Before installation process :
-
-I assume you can make your own usb installer with OpenCore Bootloader and do the MacOs installation process
-
-1. remove the Additional kext 
-
-2. Prepare the Installation Media using the Kexts and Opencore files that I provide.
-Use fake ig-platform-id 12345678 just to get to the installer view
-
-DeviceProperties->PciRoot(0x0)/Pci(0x2,0x0)->AAPL,ig-platform-id 
-
-change value from 00001619 to 12345678, and delete device-id and then save
+| Apps/Tools | Info | Link | Guide |
+| ----------- | ----------- | ----------- | ----------- |
+| gibMacOS | get the installer | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| GenSMBIOS | To Generate a new Serial | [Download](https://github.com/corpnewt/gibMacOS) | [Read](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) |
+| ProperTree |  To configure OpenCore config.plist | [Download](https://github.com/corpnewt/ProperTree) | - |
+| OpenCore Configurator | To configure OpenCore config.plist | [Download](https://mackie100projects.altervista.org/opencore-configurator/) | - |
+| SSDTTime | To get the DSDT and SSDT | [Download](https://github.com/corpnewt/SSDTTime) | - |
+| DPCIManager | To see the device properties in macOS | [Download](https://github.com/MuntashirAkon/DPCIManager/releases) | - |
+| Hackintool | To see the device properties in macOS | [Download](https://github.com/headkaze/Hackintool/releases) | - |
+| IntelPowerGadget | To see CPU Power Management and Performance test | [Download](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html#attachment-heading) | - |
 
 
-============================================================================
 
-Post Installation :
+[Duck Duck Go](https://duckduckgo.com)
 
-1. Open terminal type "sudo diskutil mount EFI" and type the password
-Copy EFI folder from FlashDrive to the internal EFI partition
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
 
-2. do the reverse when installing earlier change value AAPL,ig-platform-id from 12345678 to 00001619, 
-and add device-id set "value" 16190000 "type" DATA, then save and try booting via internal EFI without USB FlashDrive
 
-============================================================================
 
-Installer MacOs, and Supporting App :
 
-1. To get the installer : 
-- gibMacOS : https://github.com/corpnewt/gibMacOS
-
-2. To Generate a new Serial : 
-- GenSMBIOS : https://github.com/corpnewt/GenSMBIOS
-- Tutorial : https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial
-
-3. To configure config.plist :
-- ProperTree : https://github.com/corpnewt/ProperTree 
-- OpenCore Configurator : https://mackie100projects.altervista.org/opencore-configurator/
-
-4. To get the DSDT and SSDT : 
-- SSDTTime : https://github.com/corpnewt/SSDTTime
-
-5. To see the device properties :
-- DPCIManager : https://github.com/MuntashirAkon/DPCIManager/releases
-- Hackintool : https://github.com/headkaze/Hackintool/releases
-
-6. To see CPU Power Management and Performance test:
-- IntelPowerGadget : https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html#attachment-heading
 
