@@ -1,10 +1,12 @@
 # Lenovo-310-14ISK-Hackintosh-EFI-OpenCore
 
-Don't try this EFI in different lenovo model !!! (Only Lenovo Ideapad 310 14ISK) Do With Your Own Risk !!!
+**Don't try this EFI in different lenovo model !!!** (Only Lenovo Ideapad 310 14ISK) **Do With Your Own Risk !!!**
 
-Not recommended for older bios versions (you have to upgrade bios or make your own DSDT with SSDTTime)
+**Not recommended for older bios versions !!!**, if you are not in the same bios version as this readme, you can use everything in the EFI folder **except** the **ACPI** folder. may cause the Hackintosh not boot properly. **(The latest version is mentioned below)**
 
-If you've got same Laptop model and already upgraded to lastest bios you can just simply use the EFI folder posted above. 
+If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
+
+In everything on this [README.md](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
 
 Sorry for my bad english :)
 
@@ -21,6 +23,7 @@ Sorry for my bad english :)
 | Type | Spec | Status |
 | ----------- | ----------- | ----------- |
 | Processor | Intel Core i5 6200U Skylake | Working |
+| Chipset | Intel Skylake-U | Working |
 | RAM | 4GB DDR4 Onboard + Samsung 4GB DDR4 SODIMM slot (2133 Mhz) | Working |
 | IGPU | Intel HD Graphics 520 | Working |
 | dGPU | Nvidia GT 920MX | Not Supported Optimus Mode |
@@ -28,21 +31,25 @@ Sorry for my bad english :)
 | Wifi | Intel AC 3165 + Bluetooth | Working |
 | Ethernet | Realtek RTL8168GU Gigabit Ethernet | Working |
 | Touchpad | Synaptic SYN2B58 PS2 Interface | Working |
+| Keyboard | PS2 Interface | Working |
+| Sound | Conexant CX20751/2, Codec ID=0x14F1510F Layout ID=28 | Working |
+| Battery | - | Working |
+| Webcam | - | Working |
 
 ### System Status :
 
 | Type | Status |
 | ----------- | ----------- |
 | QE/CI Graphics Intel HD 520 | Working |
-| CPU PM | Working |
+| CPU Power Management | Working |
 | Restart and Shutdown | Working |
 | Sleep | Not Working |
 | Brightness Slider & keys F11 - F12 | Working |
 | Battery Precentage | Working |
-| Touchpad and gesture | Working |
+| Touchpad and Gesture | Working |
 | SD Card Reader | Untested |
 | HDMI Display | Working |
-| HDMI  Audio | Working |
+| HDMI Audio | Working |
 | iService | Not Working |
 
 ### Used Kext :
@@ -66,24 +73,40 @@ Sorry for my bad english :)
 After you download it, copy and paste/replace all the kext to the EFI folder in EFI-> OC-> Kext)
 
 ### Used DSDT & SSDT :
-
-If you've got same Laptop model and already upgraded to lastest bios you can just simply use the DSDT & SSDT Files above. 
+If you have the same Laptop model and have upgraded to the latest bios you can simply use the DSDT & SSDT File below. 
+**Do not use this file !!!**
+if you are not in the latest version of the bios, then you have to dump or create your own DSDT & SSDT files by reading the guide column.
 
 | DSDT / SSDT | Info | Guide |
 | ----------- | ----------- | ----------- |
-| [DSDT.aml](/EFI/OC/ACPI/DSDT.aml) | Differentiated System Description Table which contains the Differentiated Definition Block that supplies the implementation and configuration information about the base system | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
+| [DSDT.aml](/EFI/OC/ACPI/DSDT.aml) | Differentiated System Description Table which contains the Differentiated Definition Block that supplies the implementation and configuration information about the base system | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Manual/dump.html) |
 | [SSDT-EC.aml](/EFI/OC/ACPI/SSDT-EC.aml) | Fix Embedded Controller for hotkeys and battery | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html) |
 | [SSDT-HPET.aml](/EFI/OC/ACPI/SSDT-HPET.aml)  | Patch IRQ Conflicts | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
 | [SSDT-PLUG.aml](/EFI/OC/ACPI/SSDT-PLUG.aml) | Fix Intel Skylake Processor Plugin Type | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Universal/plug.html) |
 | [SSDT-PNLF.aml](/EFI/OC/ACPI/SSDT-PNLF.aml)| Fix Backlight Slider | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html) |
 | [SSDT-SBUS-MCHC.aml](/EFI/OC/ACPI/SSDT-SBUS-MCHC.aml) | Fix Intel System Management Bus | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html) |
 | [SSDT-dGPU-Off.aml](/EFI/OC/ACPI/SSDT-dGPU-Off.aml) | Disable Nvidia Optimus Discrete GPU | [Read](https://dortania.github.io/Getting-Started-With-ACPI/Laptops/laptop-disable.html#optimus-method) |
-| [SSDT-UIAC.aml](/EFI/OC/ACPI/SSDT-UIAC.aml)| Blocked Unused Usb Port | - |
-| [SSDT-USBX.aml](/EFI/OC/ACPI/SSDT-USBX.aml) | Fix Usb Port Mapping | - |
+| [SSDT-UIAC.aml](/EFI/OC/ACPI/SSDT-UIAC.aml)| Blocked Unused Usb Port | [Read](https://dortania.github.io/OpenCore-Post-Install/usb/) |
+| [SSDT-USBX.aml](/EFI/OC/ACPI/SSDT-USBX.aml) | Fix Usb Port Mapping | [Read](https://dortania.github.io/OpenCore-Post-Install/usb/) |
 
 After you download it, copy and paste/replace all the DSDT/SSDT to the EFI folder in EFI-> OC-> ACPI)
 
+### Installer MacOs, and Supporting App :
+
+| Apps/Tools | Info | Link | Guide |
+| ----------- | ----------- | ----------- | ----------- |
+| gibMacOS | To get the installer | [Download](https://github.com/corpnewt/gibMacOS) | - |
+| GenSMBIOS | To Generate a new Serial | [Download](https://github.com/corpnewt/gibMacOS) | [Read](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) |
+| ProperTree |  To configure OpenCore config.plist | [Download](https://github.com/corpnewt/ProperTree) | - |
+| OpenCore Configurator | To configure OpenCore config.plist | [Download](https://mackie100projects.altervista.org/opencore-configurator/) | - |
+| SSDTTime | To get the DSDT and SSDT | [Download](https://github.com/corpnewt/SSDTTime) | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
+| DPCIManager | To see the device properties in macOS | [Download](https://github.com/MuntashirAkon/DPCIManager/releases) | - |
+| Hackintool | To see the device properties in macOS | [Download](https://github.com/headkaze/Hackintool/releases) | - |
+| IntelPowerGadget | To see CPU Power Management and Performance test | [Download](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html#attachment-heading) | - |
+
 ### Patching Battery on DSDT :
+
+Do not do this patch, if your battery percentage is working well.
 
 #### FIX 16 BIT REGISTERS :
 
@@ -207,17 +230,3 @@ Method (WECB, 3, Serialized)\n
 }\n
 end;
 ```
-
-### Installer MacOs, and Supporting App :
-
-| Apps/Tools | Info | Link | Guide |
-| ----------- | ----------- | ----------- | ----------- |
-| gibMacOS | get the installer | [Download](https://github.com/corpnewt/gibMacOS) | - |
-| GenSMBIOS | To Generate a new Serial | [Download](https://github.com/corpnewt/gibMacOS) | [Read](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) |
-| ProperTree |  To configure OpenCore config.plist | [Download](https://github.com/corpnewt/ProperTree) | - |
-| OpenCore Configurator | To configure OpenCore config.plist | [Download](https://mackie100projects.altervista.org/opencore-configurator/) | - |
-| SSDTTime | To get the DSDT and SSDT | [Download](https://github.com/corpnewt/SSDTTime) | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
-| DPCIManager | To see the device properties in macOS | [Download](https://github.com/MuntashirAkon/DPCIManager/releases) | - |
-| Hackintool | To see the device properties in macOS | [Download](https://github.com/headkaze/Hackintool/releases) | - |
-| IntelPowerGadget | To see CPU Power Management and Performance test | [Download](https://software.intel.com/content/www/us/en/develop/articles/intel-power-gadget.html#attachment-heading) | - |
-
