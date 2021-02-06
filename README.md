@@ -26,7 +26,7 @@ Sorry for my bad english :)
 | Chipset | Intel Skylake-U | Working |
 | RAM | 4GB DDR4 Onboard + Samsung 4GB DDR4 SODIMM slot (2133 Mhz) | Working |
 | IGPU | Intel HD Graphics 520 | Working |
-| dGPU | Nvidia GT 920MX | Not Supported Optimus Mode |
+| dGPU | Nvidia GT 920MX (Optimus Mode) | Not Supported |
 | Storage | 1x WD Blue 1TB + 1x Visipro SSD SATA 120GB | Working |
 | Wifi | Intel AC 3165 + Bluetooth | Working |
 | Ethernet | Realtek RTL8168GU Gigabit Ethernet | Working |
@@ -63,12 +63,13 @@ Sorry for my bad english :)
 | [SMCProcessor.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Processor Monitoring |
 | [SMCSuperIO.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Fan Speed Monitoring |
 | [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Battery Monitoring |
-| [VoodooPS2Controller.kext](https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller/releases) | To Patch Synaptics ps/2 Touchpad & Keyboard |
+| [ApplePS2SmartTouchPad.kext]( Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/ApplePS2SmartTouchPad.zip ) | To Patch Synaptics ps/2 Touchpad & Keyboard |
 | [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) | To patch Intel AC 3165 |
 | [IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | To patch Intel Bluetooth |
 | [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | Intel Skylake CPU select its own stepping speed without the usage of the CPU Multiplier |
 | [VoodooTSCSync.kext](https://bitbucket.org/RehabMan/VoodooTSCSync/downloads) | A kernel extension which will synchronize the TSC on any Intel CPUs |
 | [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases) | To patch The Ethernet |
+| [USBPorts.kext]( Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/USBPorts.zip ) | To patch the usb mapping port |
 
 After you download it, copy and paste/replace all the kext to the EFI folder in EFI-> OC-> Kext)
 
