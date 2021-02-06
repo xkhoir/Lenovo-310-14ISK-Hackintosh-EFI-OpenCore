@@ -42,7 +42,7 @@ Sorry for my bad english :)
 | Touchpad and gesture | Working |
 | SD Card Reader | Untested |
 | HDMI Display | Working |
-| HDMI  Audio | Not Working |
+| HDMI  Audio | Working |
 | iService | Not Working |
 
 ### Used Kext :
