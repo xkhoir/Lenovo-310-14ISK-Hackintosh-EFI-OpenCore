@@ -33,8 +33,9 @@ Sorry for my bad english :)
 | Touchpad | Synaptic SYN2B58 PS2 Interface | Working |
 | Keyboard | PS2 Interface | Working |
 | Sound | Conexant CX20751/2, Codec ID=0x14F1510F Layout ID=28 | Working |
-| Battery | - | Working |
-| Webcam | - | Working |
+| Battery | Device=L15L2PB2, Manufacturer=LGC, SN=5119 | Working |
+| Webcam | Realtek EasyCamera | Working |
+| SD Card Reader | Realtek USB 2.0 Card Reader | Untested |
 
 ### System Status :
 
@@ -47,7 +48,6 @@ Sorry for my bad english :)
 | Brightness Slider & keys F11 - F12 | Working |
 | Battery Precentage | Working |
 | Touchpad and Gesture | Working |
-| SD Card Reader | Untested |
 | HDMI Display | Working |
 | HDMI Audio | Working |
 | iService | Not Working |
