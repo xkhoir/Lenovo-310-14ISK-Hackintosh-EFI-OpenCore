@@ -103,6 +103,7 @@ After you download it, copy and paste/replace all the DSDT/SSDT to the EFI folde
 | ProperTree |  To configure OpenCore config.plist | [Download](https://github.com/corpnewt/ProperTree) | - |
 | OpenCore Configurator | To configure OpenCore config.plist | [Download](https://mackie100projects.altervista.org/opencore-configurator/) | - |
 | OC-Gen-X |  To configure OpenCore config.plist | [Download](https://github.com/Pavo-IM/OC-Gen-X/releases) | - |
+| MaciASL |  To configure ACPI Files | [Download](https://github.com/acidanthera/MaciASL/releases) | - |
 | SSDTTime | To get the DSDT and SSDT | [Download](https://github.com/corpnewt/SSDTTime) | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
 | DPCIManager | To see the device properties in macOS | [Download](https://github.com/MuntashirAkon/DPCIManager/releases) | - |
 | Hackintool | To see the device properties in macOS | [Download](https://github.com/headkaze/Hackintool/releases) | - |
