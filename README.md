@@ -6,7 +6,7 @@
 
 If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
 
-Looking for a battery patch for this laptop? [Click Here](Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/Battery_Patch.md)
+Looking for a battery patch for this laptop? [Click Here](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/main/Battery_Patch.md)
 
 In everything on this [README.md](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
 
