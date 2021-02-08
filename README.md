@@ -6,6 +6,8 @@
 
 If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
 
+Looking for a battery patch for this laptop? [Click Here](Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/Battery_Patch.md)
+
 In everything on this [README.md](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
 
 Sorry for my bad english :)
@@ -100,6 +102,7 @@ After you download it, copy and paste/replace all the DSDT/SSDT to the EFI folde
 | GenSMBIOS | To Generate a new Serial | [Download](https://github.com/corpnewt/gibMacOS) | [Read](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#generate-a-new-serial) |
 | ProperTree |  To configure OpenCore config.plist | [Download](https://github.com/corpnewt/ProperTree) | - |
 | OpenCore Configurator | To configure OpenCore config.plist | [Download](https://mackie100projects.altervista.org/opencore-configurator/) | - |
+| OC-Gen-X |  To configure OpenCore config.plist | [Download](https://github.com/Pavo-IM/OC-Gen-X/releases) | - |
 | SSDTTime | To get the DSDT and SSDT | [Download](https://github.com/corpnewt/SSDTTime) | [Read](https://dortania.github.io/Getting-Started-With-ACPI/ssdt-methods/ssdt-easy.html#running-ssdttime) |
 | DPCIManager | To see the device properties in macOS | [Download](https://github.com/MuntashirAkon/DPCIManager/releases) | - |
 | Hackintool | To see the device properties in macOS | [Download](https://github.com/headkaze/Hackintool/releases) | - |
