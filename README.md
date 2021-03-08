@@ -65,13 +65,13 @@ Sorry for my bad english :)
 | [SMCProcessor.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Processor Monitoring |
 | [SMCSuperIO.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Fan Speed Monitoring |
 | [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Battery Monitoring |
-| [ApplePS2SmartTouchPad.kext]( Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/ApplePS2SmartTouchPad.zip ) | To Patch Synaptics ps/2 Touchpad & Keyboard |
+| [ApplePS2SmartTouchPad.kext]( https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/551d43d2586aa635c8feb135fd5d2e720d1d0423/ApplePS2SmartTouchPad.zip ) | To Patch Synaptics ps/2 Touchpad & Keyboard |
 | [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) | To patch Intel AC 3165 |
 | [IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | To patch Intel Bluetooth |
 | [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | Intel Skylake CPU select its own stepping speed without the usage of the CPU Multiplier |
 | [VoodooTSCSync.kext](https://bitbucket.org/RehabMan/VoodooTSCSync/downloads) | A kernel extension which will synchronize the TSC on any Intel CPUs |
 | [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases) | To patch The Ethernet |
-| [USBPorts.kext]( Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/USBPorts.zip ) | To patch the usb mapping port |
+| [USBPorts.kext]( https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/551d43d2586aa635c8feb135fd5d2e720d1d0423/USBPorts.zip ) | To patch the usb mapping port |
 
 After you download it, copy and paste/replace all the kext to the EFI folder in EFI-> OC-> Kext)
 
