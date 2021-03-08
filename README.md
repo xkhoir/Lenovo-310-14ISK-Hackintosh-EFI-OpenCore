@@ -18,7 +18,7 @@ Sorry for my bad english :)
 
 | Laptop Type | Bios Version | Installed macOS | Bootloader |
 | ----------- | ----------- | ----------- | ----------- | 
-| Lenovo Ideapad 310 14ISK 80SL | LENOVO Insyde 0XCN45WW (Lastest)| Bigsur v11.2 (20D64) | [OpenCore v0.6.6](https://github.com/acidanthera/OpenCorePkg/releases) |
+| Lenovo Ideapad 310 14ISK 80SL | LENOVO Insyde 0XCN45WW (Lastest)| Bigsur 11.2.2 (20D80) | [OpenCore v0.6.7](https://github.com/acidanthera/OpenCorePkg/releases) |
 
 ### My Specifications :
 
