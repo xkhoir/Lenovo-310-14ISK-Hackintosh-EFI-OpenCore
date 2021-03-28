@@ -2,7 +2,7 @@
 
 **Don't try this EFI in different lenovo model !!!** (Only Lenovo Ideapad 310 14ISK) **Do With Your Own Risk !!!**
 
-**Not recommended for older bios versions !!!**, if you are not in the same bios version as this readme, you can use everything in the EFI folder **except** the **ACPI** folder. may cause the Hackintosh not boot properly. **([The latest version](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore#lenovo-310-14isk) is mentioned below)**
+**Not recommended for older bios versions !!!**, if you are not in the same bios version as this readme, may cause the Hackintosh not boot properly. I recommend you to upgrade to lastest bios version. **([The latest version](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore#lenovo-310-14isk) is mentioned below)**
 
 If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
 
@@ -46,7 +46,7 @@ Sorry for my bad english :)
 | QE/CI Graphics Intel HD 520 | Working |
 | CPU Power Management | Working |
 | Restart and Shutdown | Working |
-| Sleep | Not Working |
+| Sleep | Working |
 | Brightness Slider & keys F11 - F12 | Working |
 | Battery Precentage | Working |
 | Touchpad and Gesture | Working |
@@ -78,7 +78,8 @@ After you download it, copy and paste/replace all the kext to the EFI folder in 
 ### Used DSDT & SSDT :
 If you have the same Laptop model and have upgraded to the latest bios you can simply use the DSDT & SSDT File below. 
 **Do not use this file !!!**
-if you are not in the latest version of the bios, then you have to dump or create your own DSDT & SSDT files by reading the guide column.
+if you are not in the latest version of the bios, then you have to dump or create your own DSDT & SSDT files by reading the guide column. 
+**I recommend you to upgrade to [lastest bios version](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore#lenovo-310-14isk)!!!!**
 
 | DSDT / SSDT | Info | Guide |
 | ----------- | ----------- | ----------- |
