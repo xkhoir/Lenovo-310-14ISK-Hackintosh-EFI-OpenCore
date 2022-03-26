@@ -6,7 +6,7 @@
 
 If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
 
-Looking a battery patch for this laptop? [Click Here](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/main/Battery_Patch.md) In for this EFI version, you don't necessary a battery patch, because it has been patched by ECEnabler.kext
+Looking a battery patch for this laptop? [Click Here](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/main/Battery_Patch.md) In this EFI version, you don't necessary a battery patch, because it has been patched by [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
 
 In everything on this [README.md](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
 
@@ -60,18 +60,19 @@ Sorry for my bad english :)
 | ----------- | ----------- |
 | [Lilu.kext](https://github.com/acidanthera/Lilu/releases) | Kernel extension Arbitrary kext and process patching on macOS |
 | [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen/releases) | To disable Nvidia discrete GPU and patch framebuffer Intel HD 520 |
-| [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases) | To patch on-board sound controllers|
+| [AppleALC.kext](https://github.com/acidanthera/AppleALC/releases) | To Patch on-board sound controllers|
 | [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC/releases) | SMC Emulator Layer |
 | [SMCProcessor.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Processor Monitoring |
 | [SMCSuperIO.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Fan Speed Monitoring |
 | [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC/releases) | VirtualSMC Plugin for Battery Monitoring |
+| [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases) | To enable Patch battery percentage |
 | [ApplePS2SmartTouchPad.kext]( https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/551d43d2586aa635c8feb135fd5d2e720d1d0423/ApplePS2SmartTouchPad.zip ) | To Patch Synaptics ps/2 Touchpad & Keyboard |
-| [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) | To patch Intel AC 3165 |
+| [AirportItlwm.kext](https://github.com/OpenIntelWireless/itlwm/releases) | To Patch Intel AC 3165 |
 | [IntelBluetoothFirmware.kext](https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases) | To patch Intel Bluetooth |
 | [HWPEnabler.kext](https://github.com/goodwin/HWPEnable) | Intel Skylake CPU select its own stepping speed without the usage of the CPU Multiplier |
 | [VoodooTSCSync.kext](https://bitbucket.org/RehabMan/VoodooTSCSync/downloads) | A kernel extension which will synchronize the TSC on any Intel CPUs |
-| [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases) | To patch The Ethernet |
-| [USBPorts.kext]( https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/551d43d2586aa635c8feb135fd5d2e720d1d0423/USBPorts.zip ) | To patch the usb mapping port |
+| [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X/releases) | To Patch The Ethernet port |
+| [USBPorts.kext]( https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/551d43d2586aa635c8feb135fd5d2e720d1d0423/USBPorts.zip ) | To patch mapping the usb port |
 
 After you download it, copy and paste/replace all the kext to the EFI folder in EFI-> OC-> Kext)
 
