@@ -2,8 +2,6 @@
 
 **Don't try this EFI in different lenovo model !!!** (Only Lenovo Ideapad 310 14ISK) **Do With Your Own Risk !!!**
 
-**New Updates !!!** This EFI, Only For Monterey !!!
-
 **Not recommended for older bios versions !!!**, if you are not in the same bios version as this readme, may cause the Hackintosh not boot properly. I recommend you to upgrade to lastest bios version. **([The latest version](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore#lenovo-310-14isk) is mentioned below)**
 
 If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
@@ -20,7 +18,7 @@ Sorry for my bad english :)
 
 | Laptop Type | Bios Version | Installed macOS | Bootloader |
 | ----------- | ----------- | ----------- | ----------- | 
-| [Lenovo Ideapad 310 14ISK 80SL](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/?linkTrack=Homepage%3ABody_Search%20Products&searchType=4&keyWordSearch=310-14ISK%20Laptop%20%28ideapad%29%20-%20Type%2080SL) | [LENOVO Insyde 0XCN45WW](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/downloads/driver-list/component?name=BIOS) (Lastest)| Monterey 12.3 (21E230) | [OpenCore v0.7.9](https://github.com/acidanthera/OpenCorePkg/releases) |
+| [Lenovo Ideapad 310 14ISK 80SL](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/?linkTrack=Homepage%3ABody_Search%20Products&searchType=4&keyWordSearch=310-14ISK%20Laptop%20%28ideapad%29%20-%20Type%2080SL) | [LENOVO Insyde 0XCN45WW](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/downloads/driver-list/component?name=BIOS) (Lastest)| Big Sur 11.6.5 (20G527) | [OpenCore v0.7.9](https://github.com/acidanthera/OpenCorePkg/releases) |
 
 ### My Specifications :
 
