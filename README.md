@@ -1,16 +1,12 @@
 # Lenovo-310-14ISK-Hackintosh-EFI-OpenCore
 
-**Don't try this EFI in different lenovo model !!!** (Only Lenovo Ideapad 310 14ISK) **Do With Your Own Risk !!!**
+**Don't try this EFI in a different Lenovo model !!!** (Only Lenovo Ideapad 310 14ISK) **Do With Your Own Risk !!!**
 
-**Not recommended for older bios versions !!!**, if you are not in the same bios version as this readme, may cause the Hackintosh not boot properly. I recommend you to upgrade to lastest bios version. **([The latest version](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore#lenovo-310-14isk) is mentioned below)**
+This EFI is still not stable on macOS 12 Monterey, due to [problems with Bluetooh](https://dortania.github.io/OpenCore-Install-Guide/extras/monterey.html#bluetooth) Apple has completely rewritten the Bluetooth stack. and support for ApplePS2SmartTouchPad.kext which cannot be used in Monterey
 
-If you've got **same Laptop model and already upgraded to lastest bios** you can just simply use the EFI folder posted above, and just replace the platforminfo in the config.plist with this [Guide](https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/skylake.html#platforminfo)
+Looking for a battery patch for this laptop? [Click Here](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/main/Battery_Patch.md) In this EFI version, you don't necessary a battery patch, because it has been patched by [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
 
-Looking a battery patch for this laptop? [Click Here](https://github.com/xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/blob/main/Battery_Patch.md) In this EFI version, you don't necessary a battery patch, because it has been patched by [ECEnabler.kext](https://github.com/1Revenger1/ECEnabler/releases)
-
-In everything on this [README.md](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
-
-Sorry for my bad english :)
+In everything on this [README](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/README.md), refers to the [Dortania Guide](https://dortania.github.io/getting-started/).
 
 ============================================================================
 
