@@ -14,7 +14,7 @@ In everything on this [README](xkhoir/Lenovo-310-14ISK-Hackintosh-EFI-OpenCore/R
 
 | Laptop Type | Bios Version | Installed macOS | Bootloader |
 | ----------- | ----------- | ----------- | ----------- | 
-| [Lenovo Ideapad 310 14ISK 80SL](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/?linkTrack=Homepage%3ABody_Search%20Products&searchType=4&keyWordSearch=310-14ISK%20Laptop%20%28ideapad%29%20-%20Type%2080SL) | [LENOVO Insyde 0XCN45WW](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/downloads/driver-list/component?name=BIOS) (Lastest)| Big Sur 11.6.5 (20G527) | [OpenCore v0.7.9](https://github.com/acidanthera/OpenCorePkg/releases) |
+| [Lenovo Ideapad 310 14ISK 80SL](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/?linkTrack=Homepage%3ABody_Search%20Products&searchType=4&keyWordSearch=310-14ISK%20Laptop%20%28ideapad%29%20-%20Type%2080SL) | [LENOVO Insyde 0XCN45WW](https://pcsupport.lenovo.com/id/id/products/laptops-and-netbooks/300-series/310-14isk/80sl/downloads/driver-list/component?name=BIOS) (Lastest)| Big Sur 11.6.5 (20G527) | [OpenCore v0.8.0](https://github.com/acidanthera/OpenCorePkg/releases) |
 
 ### My Specifications :
 
